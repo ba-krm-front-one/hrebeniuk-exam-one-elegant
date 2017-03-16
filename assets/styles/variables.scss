@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:100,400,700');
+@import url('https://fonts.googleapis.com/css?family=Raleway:400,700');
+
+$title-font: 700 35px "Raleway", sans-serif;
+$text-font: 400 16px/30px "Lato", sans-serif;
+
+$main-color: #222222;
+$light-color: #ffffff;
+$hover-color: #0889c4;
+$input-color:#afafaf;
+
+$transform-time: transform .2s ease-in, opacity .2s ease-in;
+
+@mixin  horizontal-center($margin-left) {
+  position: absolute;
+  left: 50%;
+  margin-left: $margin-left;
+}
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+  -moz-border-radius: $radius;
+  -ms-border-radius: $radius;
+  border-radius: $radius;
+}
+
+.flex-container{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}

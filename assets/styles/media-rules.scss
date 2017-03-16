@@ -1,0 +1,23 @@
+@media all and (max-width: 1000px){
+  .main-menu {
+    display: flex;
+    flex-direction: column ;
+    align-items: flex-end;
+    &__items{
+      display: block;
+      text-align: right;
+      margin: 0 0 10px;
+    }
+  }
+  .about-us__items{
+    text-align: center;
+  }
+  .phone{
+    display: none;
+  }
+}
+@media all and (min-width: 800px){
+  .flex-container{
+    margin: 0 -10px;
+  }
+}

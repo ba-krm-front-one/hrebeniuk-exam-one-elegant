@@ -1,0 +1,57 @@
+@charset "UTF-8";
+.our-work__portfolio {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  text-align: center; }
+  .our-work__portfolio-items {
+    max-width: 370px;
+    min-width: 300px;
+    flex-grow: 1;
+    height: 420px;
+    position: relative;
+    overflow: hidden;
+    margin: 25px 0; }
+    .our-work__portfolio-items:nth-of-type(1) {
+      background: #c0c0c0 url("../images/kinderen.jpg") no-repeat; }
+    .our-work__portfolio-items:nth-of-type(2) {
+      background: #c0c0c0 url("../images/jetindus.jpg") no-repeat; }
+    .our-work__portfolio-items:nth-of-type(3) {
+      background: #c0c0c0 url("../images/timplement.jpg") no-repeat; }
+    .our-work__portfolio-items--link {
+      background: rgba(0, 0, 0, 0.75);
+      height: 100%;
+      width: 100%;
+      visibility: hidden;
+      padding: 170px 0; }
+    .our-work__portfolio-items:hover .our-work__portfolio-items--link {
+      visibility: visible; }
+  .our-work__portfolio--a {
+    color: #ffffff;
+    font-size: 22px;
+    /* Приближение из-за подстановки шрифтов */
+    font-weight: 400;
+    text-transform: uppercase;
+    text-decoration: none; }
+    .our-work__portfolio--a:after {
+      display: block;
+      content: url("../images/link-icon.svg");
+      width: 41px;
+      height: 41px;
+      margin-top: 40px; }
+  .our-work__portfolio-button {
+    color: #222222;
+    font-size: 24px;
+    font-weight: 400;
+    outline: none;
+    text-transform: uppercase;
+    background: none;
+    width: 370px;
+    height: 60px;
+    border: 3px solid #222222;
+    text-align: center;
+    margin: 54px auto 0;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%); }

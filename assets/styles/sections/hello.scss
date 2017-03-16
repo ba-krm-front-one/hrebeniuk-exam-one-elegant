@@ -1,0 +1,85 @@
+.logo-elegant {
+  display: block;
+  float: left;
+}
+.hello {
+  background: #02496a url("../images/hero-backgraund.jpg") 50% no-repeat;
+  -webkit-background-size: cover;
+  background-size: cover;
+  padding: 47px 0;
+  position: relative;
+  min-height: 900px;
+  color:$light-color;
+  text-align: center;
+  &__navigation {
+    float: right;
+    margin-right: 6%;
+    font-size: 14px;
+  }
+  &__banner {
+    padding-top: 265px;
+    max-width: 650px;
+    &--title {
+      font: $title-font;
+      color: $light-color;
+      font-size: 48px;
+      position: relative;
+      text-transform: uppercase;
+      &:after {
+        display: block;
+        content: " ";
+        height: 2px;
+        width: 86px;
+        background-color: $light-color;
+        margin: 40px auto;
+        letter-spacing: 0.5px;
+      }
+    }
+    &--text {
+      font-size: 22px;
+      letter-spacing: 1px;
+    }
+  }
+  &__scroll {
+    @include horizontal-center(-46px);
+    @include border-radius(50%);
+    background: url("../images/arrow-circl-button.svg") 50% no-repeat;
+    width: 92px;
+    height: 92px;
+    bottom: 46px;
+    &:hover {
+      box-shadow: 0 0 20px $hover-color;
+      transform: translateY(10px);
+      transition: $transform-time;
+    }
+  }
+}
+.main-menu {
+  &__items {
+    display: inline-block;
+    margin-left: 50px;
+  }
+  &__link {
+    color: $light-color;
+    text-decoration: none;
+    display: block;
+    position: relative;
+    text-transform: uppercase;
+    &:before {
+      display: block;
+      position: absolute;
+      height: 3px;
+      content: "";
+      background-color: $hover-color;
+      left: 0;
+      right: 0;
+      transform: translateY(-15px);
+      transition: $transform-time;
+      opacity: 0;
+    }
+    &--active:before, &:hover:before {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+}
